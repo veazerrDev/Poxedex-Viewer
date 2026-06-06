@@ -1,0 +1,327 @@
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* APP */
+
+/* base */
+body {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+/* title */
+
+.app-title {
+  font-family: "Lexend Deca";
+  font-size: 27px;
+  margin-bottom: 50px;
+}
+
+/* app */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* input */
+.app-input_group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+  margin-bottom: 25px;
+}
+
+.app-input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 100%;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #d9e8d8;
+  color: #0d0c22;
+  box-shadow: 0 0 5px #c1d9bf, 0 0 0 10px #f5f5f5eb;
+  transition: 0.3s ease;
+}
+
+.app-input_icon {
+  position: absolute;
+  left: 1rem;
+  fill: #777;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* guessing list */
+
+.app-guessing_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  list-style: disc;
+}
+
+/* card */
+
+.app-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 105px;
+}
+
+.card-text_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  font-size: 17px;
+  margin-bottom: 36px;
+}
+
+.card-subtitle_abilities {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-list_abilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-list_abilities-item {
+  display: flex;
+  gap: 35px;
+  background-color: #d9e8d8;
+  box-shadow: 0 0 2px #c1d9bf, 0 0 0 5px #f5f5f5eb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 3px;
+  font-family: "Lexend Deca";
+}
+
+.card-subtitle_stats {
+  font-size: 22px;
+  margin-bottom: 11px;
+}
+
+.card-list_stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card-list_stats-item {
+  font-family: "Lexend Deca";
+  background-color: #d9e8d8;
+  box-shadow: 0 0 2px #c1d9bf, 0 0 0 5px #f5f5f5eb;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 2px;
+}
+
+.card-image{
+  box-shadow: 0 0 2px #c1d9bf, 0 0 0 5px #f5f5f5eb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+
+.app-input_group {
+  position: relative;
+}
+
+.app-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #f5f5f5eb;
+  border-radius: 8px;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  box-shadow: 0 0 5px #c1d9bf, 0 0 0 10px #f5f5f5eb;
+  z-index: 100;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.app-dropdown--active {
+  display: block;
+}
+
+.app-dropdown__item {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: "Lexend Deca";
+  font-size: 13px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #0d0c22;
+  transition: background 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+
+.app-dropdown__item:hover {
+  background-color: #d9e8d8;
+  box-shadow: 0 0 2px #c1d9bf;
+}

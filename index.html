@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex Viewer</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+            integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="app">
+            <!-- INPUT -->
+            <h1 class="app-title">Pokedex Viewer</h1>
+            <div class="app-input_group">
+                <svg class="app-input_icon" aria-hidden="true"
+                    viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input placeholder="Search" type="search" class="app-input">
+            </div>
+            <!-- CARD -->
+             <div class="app-card-space"></div>
+            <!-- <div class="app-card">
+                <div class="card-text_info">
+                    <h1 class="card-title">Name</h1>
+                    <h2 class="card-subtitle">Id: 1233</h2>
+                    <h2 class="card-subtitle_abilities">Abilities:</h2>
+                    <ul class="card-list_abilities">
+                    </ul>
+                    <h2 class="card-subtitle_stats">Stats:</h2>
+                    <ul class="card-list_stats">
+                    </ul>
+                </div>
+                <div class="card-image_info">
+                    <img
+                        src="#"
+                        alt="Pokemon Image!" class="card-image" width="350"
+                        height="400">
+                </div>
+            </div> -->
+        </div>
+        <script type="module" src="./src/app.js"></script>
+    </body>
+</html>
