@@ -28,7 +28,7 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=10000")
     allPokemons = data.results.map((p) => p.name);
   });
 
-// Показуємо підказки
+// SHOW SUGGESTIONS LIST
 function showSuggestions(value) {
   dropdown.innerHTML = "";
 
@@ -64,14 +64,13 @@ function showSuggestions(value) {
   dropdown.classList.add("app-dropdown--active");
 }
 
-// Закриваємо dropdown при кліку поза ним
 document.addEventListener("click", (e) => {
   if (!appInput.parentElement.contains(e.target)) {
     dropdown.classList.remove("app-dropdown--active");
   }
 });
 
-// Debounced функція для завантаження покемона з показом помилки
+// DEBOUNCE
 const debouncedLoad = debounce((pokeName) => {
   if (!pokeName) return;
 
@@ -128,6 +127,7 @@ const debouncedLoad = debounce((pokeName) => {
     .catch(() => errorFunction()); // помилка тільки після debounce
 }, 1500);
 
+//CONNECT FUNCTIONS
 appInput.addEventListener("input", (evt) => {
   const value = evt.target.value.trim();
   showSuggestions(value);
@@ -135,6 +135,7 @@ appInput.addEventListener("input", (evt) => {
   debouncedLoad(value);
 });
 
+// LOAD POKEMON
 function loadPokemon(pokeName) {
   if (!pokeName) return;
   appCardSpace.innerHTML = "";
